@@ -26,7 +26,7 @@ func main() {
 			fatalErr = err
 			return err
 		}
-		fmt.Println(path)
+
 		if info.Mode()&os.ModeSymlink != 0 {
 			in, err := os.Open(path)
 			if err != nil {
